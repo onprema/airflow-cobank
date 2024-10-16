@@ -6,7 +6,7 @@ This repository contains code related to the Airflow training for CoBank. We wil
 
 **This requires [Docker](https://docs.docker.com/engine/install/)**
 
-Run the following command to start Airflow using Docker Compose:
+Run the following command to start Airflow using Docker Compose
 ```
 make local-up
 ```
@@ -18,4 +18,4 @@ To clean up the local environment, run
 make local-down
 ```
 
-This will stop Airflow and remove the Docker containers and volumes
+This will stop Airflow and remove the Docker containers and volumes.
