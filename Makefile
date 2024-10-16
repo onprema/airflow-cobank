@@ -11,3 +11,6 @@ local-up: local-setup local-init-db
 
 local-down:
 	docker compose down --volumes --remove-orphans
+
+clean:
+	find . -type d -name "__pycache__" -exec rm -rf {} +
