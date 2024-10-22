@@ -9,9 +9,10 @@ import fileinput
 
 TEMPLATE_FILE = 'templates/process_file.py'
 
-for filename in os.listdir('data/'):
+for filename in os.listdir('config/'):
+    print(filename)
     if filename.endswith('.json'):
-        with open(f"data/{filename}") as f:
+        with open(f"config/{filename}") as f:
             config = json.load(f)
             new_dag_file = f"dags/process_{config['dag_id']}.py"
             shutil.copyfile(TEMPLATE_FILE, new_dag_file)
