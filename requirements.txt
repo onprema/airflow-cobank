@@ -1,0 +1,4 @@
+# Python dependencies go here
+--constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.10.1/constraints-3.11.txt
+apache-airflow-providers-amazon
+pandas
