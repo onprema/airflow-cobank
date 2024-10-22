@@ -43,7 +43,7 @@ t2 = PythonOperator(
 # Task 3: BashOperator
 t3 = BashOperator(
     task_id='bash_task_2',
-    bash_command="bash " + AIRFLOW_HOME + "/scripts/example_script.sh {{ds}}",
+    bash_command="bash " + AIRFLOW_HOME + "/dags/src/example_script.sh {{ds}}",
     dag=dag,
 )
 
