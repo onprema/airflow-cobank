@@ -18,8 +18,7 @@ from airflow.operators.python import PythonOperator
 default_args = {
     "owner": "airflow",
     "retries": 0,
-    "start_date": datetime(2021, 1, 1),
-    "queue": "default",
+    "start_date": datetime(2021, 1, 1)
 }
 
 dag = DAG(
