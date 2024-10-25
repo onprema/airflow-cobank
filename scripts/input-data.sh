@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # This script copies or removes data from an S3 bucket based on the provided argument.
+# It is mostly used for educational purposes, to demonstrate the sensor DAG.
 # Usage: ./input-data.sh [cp|rm]
 
 # Check if aws-credentials.json exists
